@@ -11,7 +11,7 @@ namespace semana12_Ejercicio
         static void Main(string[] args)
         {
             string continuar;
-            libreria e = new libreria();
+            libreria L = new libreria();
 
 
             do
@@ -41,10 +41,10 @@ namespace semana12_Ejercicio
                     case 0:
                         Console.WriteLine("vuelva pronto.");
                         return;
-                    case 1: e.Registrar(); break;
-                    case 2: e.Mostrar(); break;
-                    case 3: e.Modificar(); break;
-                    case 4: e.Eliminar(); break;
+                    case 1: L.Registrar(); break;
+                    case 2: L.Mostrar(); break;
+                    case 3: L.Modificar(); break;
+                    case 4: L.Eliminar(); break;
                 }
 
                 while (true)
