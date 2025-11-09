@@ -149,7 +149,8 @@ namespace semana12_Ejercicio
             while (true)
             {
                 Console.Write("Ingrese el nuevo precio del libro: S/. ");
-                if (double.TryParse(Console.ReadLine(), out NuevoPrecio) & NuevoPrecio >= 0 && NuevoPrecio <= 1000) break;
+                if (double.TryParse(Console.ReadLine(), out NuevoPrecio) & NuevoPrecio >= 0 && NuevoPrecio <= 1000)
+                    break;
                 else Console.WriteLine("Ingrese un precio válido (0 - 1000)");
             }
 
@@ -170,7 +171,7 @@ namespace semana12_Ejercicio
                 return;
             }
 
-            int Índice = -1;
+            int indice = -1;
             Console.Write("\nIngrese el nombre del libro a eliminar: ");
             string nombreEliminar = Console.ReadLine();
 
@@ -178,14 +179,14 @@ namespace semana12_Ejercicio
             {
                 if (Nombre[i] == nombreEliminar)
                 {
-                    Índice = i;
+                    indice = i;
                     break;
                 }
             }
 
-            if (Índice != -1)
+            if (indice != -1)
             {
-                for (int j = Índice; j < Nombre.Length - 1; j++)
+                for (int j = indice; j < Nombre.Length - 1; j++)
                 {
                     Nombre[j] = Nombre[j + 1];
                     Precios[j] = Precios[j + 1];

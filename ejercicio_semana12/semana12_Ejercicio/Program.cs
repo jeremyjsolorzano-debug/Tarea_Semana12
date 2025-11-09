@@ -10,87 +10,53 @@ namespace semana12_Ejercicio
     {
         static void Main(string[] args)
         {
-            string cont;
+            string continuar;
             libreria e = new libreria();
+
 
             do
             {
                 Console.Clear();
                 Console.WriteLine("*-----------------------------------------------*");
-                Console.WriteLine("|          REGISTRADORA DE LIBROS               |");
+                Console.WriteLine("|        SISTEMA DE REGISTROS DE LIBROS         |");
                 Console.WriteLine("*-----------------------------------------------*");
-                Console.WriteLine("**** Menú de opciones:           ****\n");
+                Console.WriteLine("****             Menú de opciones:          ****\n");
                 Console.WriteLine(" 1. Registrar ");
                 Console.WriteLine(" 2. Mostrar ");
                 Console.WriteLine(" 3. Modificar ");
                 Console.WriteLine(" 4. Eliminar ");
                 Console.WriteLine(" 0. Salir\n ");
 
+                int opc;
 
-                int opc = 0;
-                bool opcionValida = false;
-
-                do
+                while (true)
                 {
                     Console.Write("Ingrese una opción: ");
+                    if (int.TryParse(Console.ReadLine(), out opc) & opc >= 0 && opc <= 4) break;
+                    else Console.WriteLine("ingrese una opcion valida\n");
+                }
 
-                    string entrada = Console.ReadLine();
-
-
-                    switch (entrada)
-                    {
-                        case "0":
-                        case "1":
-                        case "2":
-                        case "3":
-                        case "4":
-
-                            opc = int.Parse(entrada);
-                            opcionValida = true;
-                            break;
-                        default:
-                            Console.WriteLine("Ingrese la opción correcta\n");
-                            break;
-                    }
-
-                } while (opcionValida == false);
                 switch (opc)
                 {
                     case 0:
-                        Console.WriteLine("\nvuelva pronto.");
+                        Console.WriteLine("vuelva pronto.");
                         return;
-                        
-                    case 1:
-                        e.Registrar();
-                        break;
-                    case 2:
-                        e.Mostrar();
-                        break;
-                    case 3:
-                        e.Modificar();
-                        break;
-                    case 4:
-                        e.Eliminar();
-                        break;
-
+                    case 1: e.Registrar(); break;
+                    case 2: e.Mostrar(); break;
+                    case 3: e.Modificar(); break;
+                    case 4: e.Eliminar(); break;
                 }
 
                 while (true)
                 {
-                    Console.WriteLine("\n¿Desea continuar? [S/N] : ");
-                    cont = Console.ReadLine().ToUpper();
-                    if (cont == "S" || cont == "N")
-                    {
-                        break;
-                    }
-                    else
-                    {
-                        Console.WriteLine("solo se puede ingresar: 's' o 'n'.\n");
-                    }
+                    Console.Write("\nDesea continuar? [S/N] : ");
+                    continuar = Console.ReadLine().ToUpper();
+                    if (continuar == "S" || continuar == "N") break;
+                    else Console.WriteLine("solo se puede ingresar 's' o 'n'.\n");
                 }
-            } while (cont == "S");
+                Console.WriteLine("\nGracias por utilizar el sistema. ");
 
-            Console.WriteLine("\nGracias por utilizar nuestro sistema. ");
+            } while (continuar == "S");
         }
     }
 }
