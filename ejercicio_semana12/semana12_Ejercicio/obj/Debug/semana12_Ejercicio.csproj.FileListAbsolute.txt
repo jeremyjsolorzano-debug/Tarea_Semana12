@@ -1,0 +1,8 @@
+C:\Users\PICI GAMER 4.0\Desktop\Tarea_semana12\ejercicio_semana12\semana12_Ejercicio\bin\Debug\semana12_Ejercicio.exe.config
+C:\Users\PICI GAMER 4.0\Desktop\Tarea_semana12\ejercicio_semana12\semana12_Ejercicio\bin\Debug\semana12_Ejercicio.exe
+C:\Users\PICI GAMER 4.0\Desktop\Tarea_semana12\ejercicio_semana12\semana12_Ejercicio\bin\Debug\semana12_Ejercicio.pdb
+C:\Users\PICI GAMER 4.0\Desktop\Tarea_semana12\ejercicio_semana12\semana12_Ejercicio\obj\Debug\semana12_Ejercicio.csproj.AssemblyReference.cache
+C:\Users\PICI GAMER 4.0\Desktop\Tarea_semana12\ejercicio_semana12\semana12_Ejercicio\obj\Debug\semana12_Ejercicio.csproj.CoreCompileInputs.cache
+C:\Users\PICI GAMER 4.0\Desktop\Tarea_semana12\ejercicio_semana12\semana12_Ejercicio\obj\Debug\semana12_Ejercicio.exe
+C:\Users\PICI GAMER 4.0\Desktop\Tarea_semana12\ejercicio_semana12\semana12_Ejercicio\obj\Debug\semana12_Ejercicio.pdb
+C:\Users\PICI GAMER 4.0\Desktop\Tarea_semana12\ejercicio_semana12\semana12_Ejercicio\obj\Debug\semana12_Ejercicio.exe.config
